@@ -13,6 +13,11 @@
     <!-- Error messages-->
     <string name="detail_error_message">Sandwich data not available</string>
 
+    <string name="detail_origin_empty">Sandwich data not available</string>
+    <string name="detail_alsoknown_empty">Sandwich data not available</string>
+    <string name="detail_ingredient_empty">Sandwich data not available</string>
+    <string name="detail_description_empty">Sandwich data not available</string>
+
     <string-array name="sandwich_names">
         <item>Ham and cheese sandwich</item>
         <item>Bosna</item>
@@ -69,7 +74,22 @@
             steamed bread. The steamed bread is typically 6–8 centimetres (2.4–3.1 in) in size,
             semi-circular and flat in form, with a horizontal fold that, when opened, gives the
             appearance that it has been sliced. The traditional filling for gua bao is a slice of
-            red-cooked porkbelly, typically dressed with stir-fried suan cai (pickled mustard
+            red-cooked porkbelly, typically dressed with stir-fried suan cai (pickled mustard\n\n
+            semi-circular and flat in form, with a horizontal fold that, when opened, gives the
+            appearance that it has been sliced. The traditional filling for gua bao is a slice of
+            red-cooked porkbelly, typically dressed with stir-fried suan cai (pickled mustard\n\n
+            semi-circular and flat in form, with a horizontal fold that, when opened, gives the
+            appearance that it has been sliced. The traditional filling for gua bao is a slice of
+            red-cooked porkbelly, typically dressed with stir-fried suan cai (pickled mustard\n\n
+            semi-circular and flat in form, with a horizontal fold that, when opened, gives the
+            appearance that it has been sliced. The traditional filling for gua bao is a slice of
+            red-cooked porkbelly, typically dressed with stir-fried suan cai (pickled mustard\n\n
+            semi-circular and flat in form, with a horizontal fold that, when opened, gives the
+            appearance that it has been sliced. The traditional filling for gua bao is a slice of
+            red-cooked porkbelly, typically dressed with stir-fried suan cai (pickled mustard\n\n
+            semi-circular and flat in form, with a horizontal fold that, when opened, gives the
+            appearance that it has been sliced. The traditional filling for gua bao is a slice of
+            red-cooked porkbelly, typically dressed with stir-fried suan cai (pickled mustard\n\n
             greens), cilantro, and ground
             peanuts.\",\"image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Steamed_Sandwich%2Ctaken_by_LeoAlmighty.jpg/600px-Steamed_Sandwich%2Ctaken_by_LeoAlmighty.jpg\",\"ingredients\":[\"Steamed
             bread\",\"Stewed meat\",\"Condiments\"]}

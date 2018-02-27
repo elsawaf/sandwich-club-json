@@ -3,6 +3,7 @@ package com.udacity.sandwichclub;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -74,10 +75,29 @@ public class DetailActivity extends AppCompatActivity {
         Toast.makeText(this, R.string.detail_error_message, Toast.LENGTH_SHORT).show();
     }
 
+    /*في حالة عدم وجود معلومات في احد الخانات
+    * من الافضل اظهار رسالة للمستخدم توضح عدم توفر المعلومة*/
     private void populateUI() {
-        originTV.setText(sandwich.getPlaceOfOrigin());
-        alsoKnownAsTV.setText(sandwich.getAlsoKnownAs().toString());
-        ingredientsTV.setText(sandwich.getIngredients().toString());
-        descriptionTV.setText(sandwich.getDescription());
+        if (sandwich.getPlaceOfOrigin().isEmpty())
+            originTV.setText(R.string.detail_origin_empty);
+        else
+            originTV.setText(sandwich.getPlaceOfOrigin());
+
+        // استخدام ميثود TextUtils.join() لعرض محتويات الليسته بشكل مبسط
+        if (sandwich.getAlsoKnownAs().isEmpty())
+            alsoKnownAsTV.setText(R.string.detail_alsoknown_empty);
+        else
+            alsoKnownAsTV.setText(TextUtils.join(" - ",sandwich.getAlsoKnownAs()));
+
+        // استخدام ميثود TextUtils.join() لعرض محتويات الليسته بشكل مبسط
+        if (sandwich.getIngredients().isEmpty())
+            ingredientsTV.setText(R.string.detail_ingredient_empty);
+        else
+            ingredientsTV.setText(TextUtils.join(" - ", sandwich.getIngredients()));
+
+        if (sandwich.getDescription().isEmpty())
+            descriptionTV.setText(R.string.detail_description_empty);
+        else
+            descriptionTV.setText(sandwich.getDescription());
     }
 }
